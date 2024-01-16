@@ -84,4 +84,7 @@ class CongratulateBot(AbstractBot):
 
 class ViewBot(AbstractBot):
     def handle(self):
-        print(self.book)
+        if len(self.book) == 0:
+            print('There is no contact')
+        else:
+            print(self.book)
